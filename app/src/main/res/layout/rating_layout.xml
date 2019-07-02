@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="3dp">
+
+    <TextView
+        android:id="@+id/txtTitelRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Ratings"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayRatingCalifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitelRatings">
+
+        <TextView
+            android:id="@+id/txtNumberRatings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4.5"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgStarRating"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:tint="#000000"
+            app:srcCompat="@android:drawable/star_off" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDescrptionRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="27 ratings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayRatingCalifications" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutProgreesBarRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayRatingCalifications"
+        app:layout_constraintStart_toStartOf="@+id/linearLayRatingCalifications"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescrptionRating">
+
+        <ProgressBar
+            android:id="@+id/progressBarRating1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="@color/succesGreen" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRating2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="@color/succesGreen" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRating3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="#ffff00" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRating4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="#ffff00" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRating5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="#ff0000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutProgreesBarRating"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutProgreesBarRating"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutProgreesBarRating">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtProgressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRatingProgressBar1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:tint="#000000"
+                app:srcCompat="@android:drawable/star_off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtProgressBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRatingProgressBar2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:tint="#000000"
+                app:srcCompat="@android:drawable/star_off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtProgressBar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRatingProgressBar3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:tint="#000000"
+                app:srcCompat="@android:drawable/star_off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtProgressBar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRatingProgressBar4"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:tint="#000000"
+                app:srcCompat="@android:drawable/star_off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtProgressBar6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRatingProgressBar5"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+
+                android:tint="#000000"
+                app:srcCompat="@android:drawable/star_off" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutProgreesBarRating"
+        app:layout_constraintStart_toEndOf="@+id/linearLayoutProgreesBarRating"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutProgreesBarRating">
+
+        <TextView
+            android:id="@+id/txtNumCaliRating5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNumCaliRating4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/txtNumCaliRating3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/txtNumCaliRating2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/txtNumCaliRating1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txttitleEstrellasRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Rating"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalCalificaRating" />
+
+    <LinearLayout
+        android:id="@+id/liinearLayoutRowStarRating"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttitleEstrellasRating">
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@android:drawable/star_off" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@android:drawable/star_off" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@android:drawable/star_off" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@android:drawable/star_off" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@android:drawable/star_off" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <TextView
+        android:id="@+id/txtTotalCalificaRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+</android.support.constraint.ConstraintLayout>

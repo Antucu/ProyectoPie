@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anthonyjhon.proyectopie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon_logo"
+        android:label="Pie"
+        android:roundIcon="@mipmap/ic_icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".PantallaPrincipal"
+            android:label="@string/title_activity_pantalla_principal"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ViewAllActivity" />
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".CategoryRegionActivity" />
+        <activity android:name=".ProductsEmpresaActivity"></activity>
+    </application>
+
+</manifest>

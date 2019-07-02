@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/idNavSearch"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:icon="@mipmap/ic_search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/idNavNotificaciones"
+        android:orderInCategory="100"
+        android:title="Notifity"
+        android:icon="@mipmap/ic_notification"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/idNavCart"
+        android:orderInCategory="100"
+        android:title="Cart"
+        android:icon="@mipmap/ic_cart"
+        app:showAsAction="always" />
+</menu>

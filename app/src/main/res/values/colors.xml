@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff6a1d</color>
+    <color name="colorPrimaryDark">#ff6a1d</color>
+    <color name="colorAccent">#e2e2e2</color>
+    <color name="botones">#A6FF6A1D</color>
+    <color name="colorTxtHint">#85E2E2E2</color>
+    <color name="succesGreen">#11a10c</color>
+</resources>

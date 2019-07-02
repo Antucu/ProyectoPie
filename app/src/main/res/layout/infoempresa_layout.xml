@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+    <TextView
+        android:id="@+id/txtTitleTiendaLayInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Datos de la tienda"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombreEmpresaLayInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nombre: "
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitleTiendaLayInfo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleTiendaLayInfo" />
+
+    <TextView
+        android:id="@+id/txtPorValorEmpresaLayInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="98.5%"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreEmpresaLayInfo"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreEmpresaLayInfo" />
+
+    <TextView
+        android:id="@+id/txtTextValorEmpeLayInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="valoraciones positivas"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPorValorEmpresaLayInfo"
+        app:layout_constraintStart_toEndOf="@+id/txtPorValorEmpresaLayInfo"
+        app:layout_constraintTop_toTopOf="@+id/txtPorValorEmpresaLayInfo" />
+
+    <TextView
+        android:id="@+id/btnTxtMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Enviar un mensaje"
+        android:textColor="#0C57D8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/btnTxtLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Contactar"
+        android:textColor="#0C57D8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnTxtMensaje"
+        app:layout_constraintTop_toTopOf="@+id/btnTxtMensaje" />
+
+    <TextView
+        android:id="@+id/btnTxtMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Ubicar"
+        android:textColor="#0C57D8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnTxtLlamar"
+        app:layout_constraintTop_toTopOf="@+id/btnTxtLlamar" />
+
+    <TextView
+        android:id="@+id/btnTxtPaginaWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Pagina web"
+        android:textColor="#0C57D8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnTxtMapa"
+        app:layout_constraintTop_toTopOf="@+id/btnTxtMapa" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#000000"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSMSLayInfo" />
+
+    <EditText
+        android:id="@+id/editTextSMSLayInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtPorValorEmpresaLayInfo"
+        app:layout_constraintTop_toBottomOf="@+id/txtPorValorEmpresaLayInfo" />
+</android.support.constraint.ConstraintLayout>

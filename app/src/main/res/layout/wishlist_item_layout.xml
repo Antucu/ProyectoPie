@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgCartFramentItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_img_forgot" />
+
+    <TextView
+        android:id="@+id/txtCartFragmentItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Pixel 2"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imgCartFramentItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgIconWishListItemOfer"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:tint="#8000ff"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCartFreeCoupen"
+        app:layout_constraintStart_toStartOf="@+id/txtCartFragmentItemTitle"
+        app:layout_constraintTop_toTopOf="@+id/txtCartFreeCoupen"
+        app:srcCompat="@mipmap/ic_icon_discount" />
+
+    <TextView
+        android:id="@+id/txtCartFreeCoupen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Free Coupen"
+        android:textColor="#8000ff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imgIconWishListItemOfer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCartFragmentItemTitle" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/slider_promocion_background"
+        android:backgroundTint="@color/succesGreen"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCartFramentItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtCartFreeCoupen">
+
+        <TextView
+            android:id="@+id/idTxtCalificaPrdoctDescrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textColor="@color/colorAccent"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@android:drawable/star_off" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRatingWishListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(27) ratings"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/txtCartFragmentItemPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Rs. 49999/-"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgCartFramentItem"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/txtCuttedPriveCartFragmentItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Rs. 40000/-"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCartFragmentItemPrecio"
+        app:layout_constraintStart_toEndOf="@+id/txtCartFragmentItemPrecio" />
+
+    <TextView
+        android:id="@+id/txtOferredApliedCartFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash on Delivery avaliable"
+        app:layout_constraintStart_toStartOf="@+id/txtCartFragmentItemPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/txtCartFragmentItemPrecio" />
+</android.support.constraint.ConstraintLayout>
